@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/back"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/tvresult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="." />
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="VER" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back"
+        android:layout_centerHorizontal="true"
+        android:text="Eliminar, Agregar o editar" />
+
+</RelativeLayout>

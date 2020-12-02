@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rest">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DESC"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/BTadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Añadir" />
+
+        <Button
+            android:id="@+id/BTdelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/BTadd"
+            android:text="Eliminar" />
+
+        <Button
+            android:id="@+id/BTupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/BTadd"
+            android:text="Actualizar" />
+
+        <Button
+            android:id="@+id/BTget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/BTadd"
+            android:layout_toEndOf="@id/BTupdate"
+            android:text="Consultar" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/IDTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="id"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="34dp" />
+
+    <EditText
+        android:id="@+id/AUT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IDTV"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="autor"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="94dp" />
+
+    <EditText
+        android:id="@+id/TIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AUT"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="titulo"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="154dp" />
+
+    <EditText
+        android:id="@+id/DESC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TIT"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="descripcion"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="212dp" />
+
+</RelativeLayout>
